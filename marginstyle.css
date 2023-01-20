@@ -87,29 +87,37 @@ a:link, a:visited {
         }
         h1{
           text-align: left;
+          font-size: large;
 
         }
         p{
           text-align: center;
+          font-size: medium;
         }
             
          body{
           text-align: center;
+          font-size: medium;
          } 
          h2{
             text-align: left;
+            font-size: medium;
           }
           h3{
             text-align: left;
+            font-size: medium;
           }
           h4{
             text-align: left;
+            font-size: medium;
           }
           p2{
             text-align: center;
+            font-size: medium;
           }
           p3{
             text-align: center;
+            font-size: medium;
           }
         }
  
