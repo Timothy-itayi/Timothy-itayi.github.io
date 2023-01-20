@@ -70,18 +70,32 @@ a:link, a:visited {
     
     a{
       text-align: center;
+      margin-top: 10px;
+         margin-right: 20px;
+          margin-bottom: 10px;
+         margin-left: 20px;
+          padding-top: 10px;
+          padding-right:20px;
+          padding-bottom: 10px;
     }
     h{
       text-align: center;
+      font-size: medium;
     }
     p{
       text-align: center;
+      font-size: medium;
     }
     img{
       align-items: center;
+      border-style: solid;
+    size-adjust: 350px;
+      
+
     }
      body{
       text-align: center;
+      font-size:medium ;
      } 
       
   }
