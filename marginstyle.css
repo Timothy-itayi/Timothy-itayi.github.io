@@ -71,3 +71,5 @@ a:link, a:visited {
     background-color: rgb(15, 165, 90);
   }
   
+  @media screen and (min-width: 480px) and (max-width: 720px) {
+}
