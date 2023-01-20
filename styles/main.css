@@ -66,8 +66,22 @@ a:link, a:visited {
       background-color: beige;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 480px) {
     
-      
+    a{
+      text-align: center;
+    }
+    h{
+      text-align: center;
+    }
+    p{
+      text-align: center;
+    }
+    img{
+      align-items: center;
+    }
+     body{
+      text-align: center;
+     } 
       
   }
