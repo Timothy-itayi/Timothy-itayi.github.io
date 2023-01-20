@@ -19,9 +19,32 @@ h2{
     border-style: groove;
 
 }
+h3{
+  border-style: groove;
 
- 
+}
+h4{
+  border-style: groove;
 
+}
+h5{
+  border-style: groove;
+
+}
+h6{
+  border-style: groove;
+
+}
+
+p3{
+  border-style: groove;
+
+}
+
+p4{
+  border-style: groove;
+
+}
 a:link, a:visited {
     background-color: skyblue;
     color: rgb(0, 0, 0);
