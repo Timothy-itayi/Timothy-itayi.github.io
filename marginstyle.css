@@ -33,24 +33,29 @@ a:link, a:visited {
     background-color: rgb(15, 165, 90);
   }
   
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-  @media screen and (max-device-width: 480px) {
+@media screen and (max-device-width: 480px) {
     a{
       text-align: center;
-      font-size: medium;
-      margin: 10px 20px;
-      padding: 10px 20px;
+      font-size: 1em;
+      padding: 10px;
     }
     h1, h2, h3, h4 {
-      text-align: left;
-      font-size: medium;
+      text-align: center;
+      font-size: 1.5em;
     }
     p, p2, p3 {
       text-align: center;
-      font-size: medium;
+      font-size: 0.8em;
     }
     body {
       text-align: center;
-      font-size: medium;
+      font-size: 1em;
     }
 }
+
