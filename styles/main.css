@@ -1,50 +1,23 @@
-h1{
-border-style: double;
-}
-p{
-    font-family: monospace;
-}
-img{
-    border-style: solid;
-    size-adjust: 350px;
-}
-
-body{
-    margin: 100px;
-    padding: 50px;
-    border: 50px;
-
-}
-h2{
-    border-style: groove;
-
-}
-h3{
+h1, h2, h3, h4, h5, h6, p3, p4 {
   border-style: groove;
-
-}
-h4{
-  border-style: groove;
-
-}
-h5{
-  border-style: groove;
-
-}
-h6{
-  border-style: groove;
-
 }
 
-p3{
-  border-style: groove;
-
+p {
+  font-family: monospace;
 }
 
-p4{
-  border-style: groove;
-
+img {
+  border-style: solid;
+  width: 350px;
+  height: 350px;
 }
+
+body {
+  margin: 100px;
+  padding: 50px;
+  border: 50px solid black;
+}
+
 a:link, a:visited {
     background-color: skyblue;
     color: rgb(0, 0, 0);

@@ -1,62 +1,24 @@
-h1{
-    border-style: double;
-    font-size: large;
-    text-align: center;
-    
+h1, h2, h3, h4 {
+  border-style: groove;
+  font-size: medium;
+  text-align: left;
+  border-width: 10px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-h2{
-    border-style: groove;
-    font-size: medium;
-    text-align: left;
-    border-width: 10px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+p, p2, p3 {
+  border-style: groove;
+  font-size: medium;
+  text-align: left;
+  margin: 10px 20px;
+  padding: 10px 20px;
 }
-p{
-    border-style: groove;
-    font-size: medium;
-    text-align: left;
-    margin-top: 10px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-}
-h3{
-    border-style: groove;
-    font-size: medium;
-    text-align: left;
-    border-width: 10px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
+h1 {
+  font-size: large;
+  text-align: center;
 }
-p2{
-    border-style: groove;
-    font-size: medium;
-    text-align: left;
-    margin-top: 10px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-}
-h4{
-    border-style: groove;
-    font-size: medium;
-    text-align: left;
-    border-width: 10px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-p3{
-    border-style: groove;
-    font-size: medium;
-    text-align: left;
-    margin-top: 10px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    padding-top: 10px;
-    padding-right:20px;
-    padding-bottom: 10px;
-}
+
 a:link, a:visited {
     background-color: skyblue;
     color: rgb(0, 0, 0);
