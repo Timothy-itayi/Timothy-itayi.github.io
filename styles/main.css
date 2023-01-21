@@ -11,7 +11,7 @@ h1{
 
 
 img {
-  size-adjust: min-width 30px;
+  size-adjust: 50%;
   border-style: 50px solid;
   width: 10px;
   height: 10px;
@@ -83,7 +83,6 @@ img{
   p, .class-script {
       text-align: center;
       color: #000;
-          font-family: Verdana, sans-serif;
       background-color: beige;
       font-size: 0.8em;
       margin: 10px 0;
@@ -95,8 +94,7 @@ img{
     width: 50%;
     height: auto;
     border: 0;
-    display: block;
-    margin: 0 auto;
+        margin: 0 auto;
     align-items: center;
   }
 
