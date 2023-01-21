@@ -1,21 +1,39 @@
-h1, h2, h3, h4, h5, h6, p3, p4 {
+ h2, h3, h4, h5, h6 {
   border-style: groove;
 }
 
-p {
-  font-family: monospace;
+h1{
+  text-align: center;
+  font-size: xx-large;
+  font-family: Impact;
 }
+
+
 
 img {
-  border-style: solid;
-  width: 350px;
-  height: 350px;
+  size-adjust: min-width 30px;
+  border-style: 50px solid;
+  width: 10px;
+  height: 10px;
+  align-items: center;
+   border-style: double;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 30px solid black;
+  border-color: #5f5959; 
+
 }
 
+
 body {
-  margin: 100px;
-  padding: 50px;
-  border: 50px solid black;
+  margin: 30px;
+  padding: 20px;
+  border: filled, solid black;
+  background-image: url('/goldenhour.jpg');
+  background-attachment: fixed; 
+  background-size: filled;
+  background-repeat: repeat;
 }
 
 a:link, a:visited {
@@ -32,54 +50,71 @@ a:link, a:visited {
     background-color: rgb(15, 165, 90);
   }
 
-  p2{
-    text-align: left;
-    color: rgb(0, 0, 0);
-    font-size: large;
-      background-color: beige;
-  }
+
 
 
   * {
-    box-sizing: border-box;
+    box-sizing: 'solid';
     margin: 0;
     padding: 0;
 }
 
-body, header, img {
+body, header {
     width: 100%;
+    height: inherit;
+}
+img{
+  size-adjust: 30%;
+  
+}
+
+
+@media screen and (min-device-width: 828px) { /* iPhone 11 or above width */
+  h1, h2, h3, h4, h5, h6 {
+      border: 0;
+      text-align: center;
+      font-size: 2em;
+  }
+
+  p, .class-script {
+      text-align: center;
+      color: #000;
+      font-size: 1em;
+      font-family: Verdana, sans-serif;
+      background-color: beige;
+  }
+  
+
+  img {
+    width: 30%;
     height: auto;
-}
+    border: 0;
+    display: block;
+    margin: 0 auto;
+  }
 
-@media screen and (max-device-width: 480px) {
-    a {
+  body {
+      margin: 0;
+      padding: 0;
+      background-image: url('/goldenhour.jpg');
+      background-size: contain;
+      background-repeat: repeat;
+      background-attachment: fixed;
+  }
+
+  a:link, a:visited {
+      color: #000;
       text-align: center;
+      text-decoration: none;
+      display: block;
+      margin: 10px 0;
       padding: 10px;
-    }
-    h1{
-      text-align: center;
-      font-size: 1.5em;
-    }
-    p{
-      text-align: center;
-      font-size: 0.8em;
-    }
-    img{
-      align-items: center;
-      border-style: solid;
-    }
-    header {
-        padding: 10px;
-    }
+  }
+
+  a:hover, a:active {
+      background-color: #0F6564;
+      color: #fff;
+  }
+
+ 
 }
-
-
-
-
-      
-      
-    
-   
-  
-  
-  
