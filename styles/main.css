@@ -69,7 +69,8 @@ img{
 }
 
 
-@media screen and (min-device-width: 480px) { 
+@media only screen and (min-device-width: 828px) and (max-device-width: 1366px) {  }
+ 
   h1, h2, h3, h4, h5, h6 {
       border: 0;
       text-align: center;
@@ -91,7 +92,7 @@ img{
   
 
   img {
-    width: 80%;
+    width: 50%;
     height: auto;
     border: 0;
     display: block;
@@ -126,4 +127,4 @@ img{
     color: #fff;}
   
  
-}
+
