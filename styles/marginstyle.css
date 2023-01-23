@@ -1,73 +1,98 @@
-h1{
-    border-style: double;
-    font-size: large;
+h1, h2, h3, h4 {
+    border-style: groove;
+    font-size: medium;
     text-align: center;
+    border-width: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  
+  
+  p, .class-paragraph {
+    border-style: groove;
+    font-size: medium;
+    text-align: center;
+    margin: 10px 20px;
+    padding: 10px 20px;
+  }
+  
+  img{
+    size-adjust: 400px;
+    border-radius: 100px;
+    max-width: 200px;
+    max-height: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+  }
+  body{
+  background-color: aliceblue;
+    border-style: groove;
+    font-size: medium;
+    text-align: center;
+    margin: 10px 20px;
+    padding: 10px 20px;
+  }
+  
+  
+  
+  a:link, a:visited {
+      background-color: skyblue;
+      color: rgb(0, 0, 0);
+      padding: 10px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      text-decoration-color: black;
+    }
     
-}
-
-h2{
-    border-style: groove;
-    font-size: medium;
-    text-align: left;
-    border-width: 10px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-p{
-    border-style: groove;
-    font-size: medium;
-    text-align: left;
-    margin-top: 10px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-}
-h3{
-    border-style: groove;
-    font-size: medium;
-    text-align: left;
-    border-width: 10px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
-}
-p2{
-    border-style: groove;
-    font-size: medium;
-    text-align: left;
-    margin-top: 10px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-}
-h4{
-    border-style: groove;
-    font-size: medium;
-    text-align: left;
-    border-width: 10px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-p3{
-    border-style: groove;
-    font-size: medium;
-    text-align: left;
-    margin-top: 10px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    padding-top: 10px;
-    padding-right:20px;
-    padding-bottom: 10px;
+    a:hover, a:active {
+      background-color: rgb(15, 165, 90);
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+  
+  @media screen and (max-device-width: 480px) {
+    a{
+      text-align: center;
+      font-size: 1em;
+      padding: 10px;
+      margin: 10px 0;
+  padding: 10px;
+    }
+    h1, h2, h3, h4 {
+      text-align: center;
+      font-size: 1.5em;
+      margin: 10px 0;
+  padding: 10px;
+    }
+    p , .class-paragraph{
+      text-align: center;
+      font-size: 0.8em;
+      margin: 10px 0;
+  padding: 10px;
+    }
+    body {
+      text-align: center;
+      font-size: 0.8em;
+      margin: 10px 0;
+  padding: 10px;
+    }
 }
 a:link, a:visited {
-    background-color: skyblue;
-    color: rgb(0, 0, 0);
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    text-decoration-color: black;
-  }
-  
-  a:hover, a:active {
-    background-color: rgb(15, 165, 90);
-  }
-  
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+a:hover, a:active {
+  background-color: #0F6564;
+  color: #fff;}
+
