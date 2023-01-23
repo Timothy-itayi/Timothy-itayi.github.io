@@ -30,7 +30,7 @@ body {
   margin: 30px;
   padding: 20px;
   border: filled, solid black;
-  background-image: url('/goldenhour.jpg');
+  background-image: url('/assets/goldenhour.jpg');
   background-attachment: fixed; 
   background-size: filled;
   background-repeat: repeat;
@@ -101,7 +101,7 @@ img{
   body {
       margin: 0;
       padding: 0;
-      background-image: url('/goldenhour.jpg');
+      background-image: url('//assets/goldenhour.jpg');
       background-size: contain;
       background-repeat: repeat;
       background-attachment: fixed;
