@@ -101,7 +101,7 @@ img{
   body {
       margin: 0;
       padding: 0;
-      background-image: url('//assets/goldenhour.jpg');
+      background-image: url('/assets/goldenhour.jpg');
       background-size: contain;
       background-repeat: repeat;
       background-attachment: fixed;
