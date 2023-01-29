@@ -1,11 +1,13 @@
  h2, h3, h4, h5, h6 {
   border-style: groove;
+  
 }
 
 h1{
   text-align: center;
   font-size: xx-large;
   font-family: Impact;
+  background-color: beige;
 }
 
 
@@ -74,7 +76,7 @@ img{
   h1, h2, h3, h4, h5, h6 {
       border: 0;
       text-align: center;
-      
+      background-color: beige;
         font-size: 1.5em;
         margin: 10px 0;
     padding: 10px;

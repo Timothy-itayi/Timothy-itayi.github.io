@@ -12,13 +12,13 @@ h1, h2, h3, h4 {
     border-style: groove;
     font-size: medium;
     text-align: center;
-    margin: 10px 20px;
+    margin: 20px 20px;
     padding: 10px 20px;
   }
   
   img{
-    size-adjust: 400px;
-    border-radius: 100px;
+    size-adjust: 500px;
+    border-radius: 0px;
     max-width: 200px;
     max-height: 150px;
     margin-top: 50px;
