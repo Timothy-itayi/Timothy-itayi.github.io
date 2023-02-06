@@ -39,13 +39,14 @@ body {
 }
 
 a:link, a:visited {
-    background-color: skyblue;
+    background-color: rgb(137, 182, 0);
     color: rgb(0, 0, 0);
     padding: 10px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    text-decoration-color: black;
+    text-decoration-color: rgb(255, 255, 255);
+    border-radius: 20%;
   }
   
   a:hover, a:active {
@@ -123,8 +124,8 @@ img{
   }
   
   a:hover, a:active {
-    background-color: #0F6564;
-    color: #fff;}
+    background-color: #222525;
+    color: rgb(194, 0, 0);}
   
  
 
