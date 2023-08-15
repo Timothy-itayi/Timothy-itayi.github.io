@@ -1,5 +1,18 @@
 ### Hi there 👋
 
+Welcome to my foundations blog for Dev Acadmey I made ust basic HTML and tailwind with a dash of javascript for nav functionality heheh. 
+
+The server is run using node.js 
+
+To run server please run the command 
+node server.js 
+
+if the server is in use please run this command :
+npx kill-port 3000 *or whatever port you are running*
+
+
+
+
 <!--
 **Timothy-itayi/Timothy-itayi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
