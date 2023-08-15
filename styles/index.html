@@ -8,7 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
     <style>
         /* Custom CSS to adjust image style */
-      
     </style>
 </head>
 
@@ -19,51 +18,68 @@
         <p class="text-lg">MY WEB DEVELOPMENT STORY</p>
     </header>
 
-    <!-- Main Content -->
-    <div class="flex justify-center items-center h-64 relative  bg-center bg-no-repeat" style="background-image: url('../assets/goldenhour.jpg');">
-      <img class="w-64 h-64 object-contain" src="/assets/tim.jpg" alt="Tim's Image">
-  </div>
-  
-
-        <section class="my-8 text-center">
-            <h2 class="text-2xl font-semibold">MY UNDERSTANDING OF WEB DEVELOPMENT</h2>
-            <a href="https://www.youtube.com/watch?v=QJHUbtR0yI8" target="_blank"
-                class="text-purple-600 underline hover:text-purple-800">Click me</a>
-        </section>
-
-        <div class="bg-white shadow-md p-6 rounded-lg my-4">
-            <h3 class="text-xl font-semibold mb-4">No seriously.... what does Web Development mean?</h3>
-            <p class="text-gray-700">
-                Web development refers in general to the tasks associated with developing websites for hosting via intranet or
-                internet.
-                The web development process includes web design, web content development, client-side/server-side scripting,
-                and network
-                security configuration, among other tasks.
-            </p>
-            <p class="text-gray-700 mt-2">
-                In a broader sense, web development encompasses all the actions, updates, and operations required to build,
-                maintain,
-                and manage a website to ensure its performance, user experience, and speed are optimal.
-                Web development is also known as website development, while the professionals that maintain a website are
-                called web
-                developers or Devs.
-            </p>
+    <!-- Blog Links Dropdown Menu -->
+    <nav class="bg-gray-200 p-4 text-center">
+        <div class="relative inline-block text-left">
+            <button type="button" class="text-purple-600 hover:underline focus:outline-none" id="blog-menu-button">
+                Blog
+            </button>
+            <div class="origin-top-right absolute right-0 mt-2 w-32 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden"
+                id="blog-menu">
+                <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="blog-menu-button">
+                    <a href="../blog/about-me.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" role="menuitem">About Me</a>
+                    <a href="../blog/emotional-intelligence.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" role="menuitem">Emotional Intelligence</a>
+                    <a href="../blog/foundations-reflection.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" role="menuitem">Foundations & Reflections</a>
+                    <li><a href="../blog/html-css.html" class="text-purple-600 hover:underline">HTML & CSS</a></li>
+                    <li><a href="../blog/identity-values.html" class="text-purple-600 hover:underline">Identity & Values</a></li>
+                    <li><a href="../blog/JavaScript -dom.html -dom.html" class="text-purple-600 hover:underline">Javascript & DOM</a></li>
+                    <li><a href="../blog/learning-plan.html" class="text-purple-600 hover:underline">Learning Plan</a></li>
+                    <li><a href="../blog/neuroplasticity.html" class="text-purple-600 hover:underline">Neuroplasticity</a></li>
+                    <li><a href="../blog/problem-solving.html" class="text-purple-600 hover:underline">Problem Solving</a></li>
+                    <li><a href="../blog/te-houtaewa-template.html" class="text-purple-600 hover: underline">Te-houtaewa-template</a></li>
+                </div>
+            </div>
         </div>
-        
-        <!-- Add anchor tags for the missing HTML files -->
-        <ul class="list-disc pl-8">
-            <li><a href="../blog/about me.html">About Me</a></li>
-            <li><a href="../blog/emotional-intelligence.html">Emotional Intelligence</a></li>
-            <li><a href="../blog/foundations-reflection.html">Foundations & Reflections</a></li>
-            <li><a href="../blog/html-css.html">HTML & CSS</a></li>
-            <li><a href="../blog/identity-values.html">Identity & Values</a></li>
-            <li><a href="../blog/JavaScript -dom.html -dom.html">Javascript & DOM</a></li>
-            <li><a href="../blog/learning-plan.html">Learning Plan</a></li>
-            <li><a href="../blog/neuroplasticity.html">Neuroplasticity</a></li>
-            <li><a href="../blog/problem-solving.html">Problem Solving</a></li>
-            <li><a href="../blog/te-houtaewa-template.html">Te Houtaewa Template</a></li>
-        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="flex justify-center items-center h-64 relative bg-center bg-no-repeat"
+        style="background-image: url('../assets/goldenhour.jpg');">
+        <img class="w-64 h-64 object-contain" src="/assets/tim.jpg" alt="Tim's Image">
     </div>
+
+    <section class="my-8 text-center">
+        <h2 class="text-2xl font-semibold">MY UNDERSTANDING OF WEB DEVELOPMENT</h2>
+        <a href="https://www.youtube.com/watch?v=QJHUbtR0yI8" target="_blank"
+            class="text-purple-600 underline hover:text-purple-800">Click me</a>
+    </section>
+
+    <div class="bg-white shadow-md p-6 rounded-lg my-4">
+        <h3 class="text-xl font-semibold mb-4">No seriously.... what does Web Development mean?</h3>
+        <p class="text-gray-700">
+            Web development refers in general to the tasks associated with developing websites for hosting via intranet or
+            internet.
+            The web development process includes web design, web content development, client-side/server-side scripting,
+            and network
+            security configuration, among other tasks.
+        </p>
+        <p class="text-gray-700 mt-2">
+            In a broader sense, web development encompasses all the actions, updates, and operations required to build,
+            maintain,
+            and manage a website to ensure its performance, user experience, and speed are optimal.
+            Web development is also known as website development, while the professionals that maintain a website are
+            called web
+            developers or Devs.
+        </p>
+    </div>
+    
+    <script>
+        const blogMenuButton = document.getElementById('blog-menu-button');
+        const blogMenu = document.getElementById('blog-menu');
+        blogMenuButton.addEventListener('click', () => {
+            blogMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 
 </html>
