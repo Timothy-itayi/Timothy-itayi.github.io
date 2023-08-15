@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>JavaScript and DOM</title>
+</head>
+<nav class="bg-gray-200 p-4 text-center">
+  <div class="relative inline-block text-left">
+      <button type="button" class="black hover-underline last: focus:outline-none" id="blog-menu-button">
+          Blog
+      </button>
+      <div class="origin-top-right absolute right-0 mt-2 w-32 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden"
+          id="blog-menu" style="z-index: 10;">
+          <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="blog-menu-button">
+             <li> <a href="../blog/about me.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" role="menuitem">About Me</a></li>
+             <li> <a href="../blog/emotional-intelligence.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" role="menuitem">Emotional Intelligence</a></li>   
+             <li>  <a href="../blog/foundations-reflection.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" role="menuitem">Foundations & Reflections</a></li>    
+             <li>  <a href="../blog/html-css.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" role="menuitem:">HTML & CSS</a></li> 
+             <li> <a href="../blog/identity-values.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" role="menuitem:">Identity & Values</a></li>   
+             <li> <a href="../blog/JavaScript-dom.html -dom.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" role="menuitem:">Javascript & DOM</a></li>    
+            <li> <a href="../blog/learning-plan.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" role="menuitem:">Learning Plan</a></li>   
+            <li>  <a href="../blog/neuroplasticity.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" role="menuitem:">Neuroplasticity</a></li>  
+            <li> <a href="../blog/problem-solving.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" role="menuitem:">Problem Solving</a></li>  
+           <li> <a href="../blog/te-houtaewa-template.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" role="menuitem">Te-houtaewa-template</a></li> 
+          </div>
+      </div>
+  </div>
+</nav>
+<body class="bg-gray-100 p-6">
+
+    <h1 class="text-2xl bg-blue-300 font-bold mb-4">What is a DOM</h1>
+    <p class="mb-6">
+        The DOM or 'Document Object Model' is a programming API for HTML and XML documents. It defines the logical structure of documents and the way a document is accessed and manipulated.
+    </p>
+    <h1 class="text-2xl bg-blue-300 font-bold mb-4">How does the DOM relate to CSS and HTML?</h1>
+    <p class="mb-6">
+        Using the DOM in CSS is not limited to classes or ids that you create. You can use any element to walk through the document - any HTML tag in fact.
+        Let's say I want to make "My can of beer" bold. I don't actually need to change the document at all.
+        Using the DOM tree, I can specify a rule that will make the text bold.
+    </p>
+    <img src="/assets/css + dom example.png" alt="image" class="mb-4">
+    <img src="/assets/getElementById()Method.png" alt="image" class="mb-6">
+    <p class="mb-6">
+        The easiest way to access a single element in the DOM is by its unique ID. You can get 
+        an element by ID with the getElementById() method of the document object.
+    </p>
+    <h1 class="text-2xl bg-blue-300 font-bold mb-4">Events and its relation to the DOM</h1>
+    <p class="mb-6">
+        Events are signals fired inside the browser window that notify of changes in the browser or operating system environment.
+        Programmers can create event handler code that will run when an event fires, allowing web pages to respond appropriately to change.
+        These 'Events' can range from Animation, Composition, Gestures, Inputs, and Media to name a few. :)
+    </p>
+    <img src="/assets/event objects relating to the dom.png" alt="image" class="mb-6">
+    <p class="mb-6">
+        DOM Events allow JavaScript to add an event listener or event handlers to HTML elements.
+        The way to set an event handler on an element is to use the EventTarget.addEventListener() Method.
+        This approach allows multiple listeners to be assigned to an element, and for listeners to be removed if needed.
+    </p>
+    <h1 class="text-2xl bg-blue-300 font-bold mb-4">HTML DOM FORM SUBMIT METHOD()</h1>
+    <p class="mb-6">
+        The HTML DOM Form submit() method is used for submitting the form data to the address specified by the action attribute.
+        It acts as a submit button to submit form data and it doesn't take any kind of parameters.
+    </p>
+    <img src="/assets/Dom Form submit() method.png" alt="image" class="mb-4">
+    <p class="mb-6">
+        Example code for the Form Submit() method:
+    </p>
+    <img src="/assets/dom method code example.png" alt="image" class="mb-4">
+    <img src="/assets/Form_submit output.jpeg" alt="image" class="mb-4">
+    <img src="/assets/Form Id.png" alt="image" class="mb-6">
+    <h1 class="text-2xl bg-blue-300 font-bold mb-4">An analogy to describe JavaScript and its relationship to HTML and CSS</h1>
+    <p class="mb-6">
+        Let’s imagine that you are in charge of planning the layout of a new neighborhood in the city.
+        This neighborhood will have some residential buildings, some eateries, a bank branch and a mall.
+    </p>
+    <img src="/assets/java analogy .png" alt="image" class="mb-4">
+    <p class="mb-6">
+        The structure of the building itself.
+        The interior and exterior decoration of the building.
+        The actual functions that visitors can perform in each building.
+    </p>
+    <img src="/assets/dom analogy .png" alt="image" class="mb-4">
+    <img src="/assets/dom analogy 2.png" alt="image" class="mb-6">
+    <p class="mb-6">
+      Since each of these three languages serves a different purpose, web developers generally use separate files for each one.
+      This idea is called "separation of concerns" - each file should have a different function within the site as a whole.
+      Although you could technically include all the code in one HTML file, that will eventually lead to repetitive code
+      as you grow your site.
+  </p>
+  
+  <h1 class="text-2xl bg-blue-300 font-bold mb-4">What is control flow and loops?</h1>
+  
+  <p class="mb-6">
+      Control flow statements let you control the flow of the execution of the code in your program. In JavaScript programming
+      you can control the flow of execution of the code by placing the decision making, branching, looping and adding conditional blocks.
+  </p>
+  <img src="/assets/analogy flow.png" alt="image" class="mb-4">
+  <p class="mb-6">
+      Once it is determined whether a condition is True or False the program knows what actions to take
+      and will then continue on to the next condition to repeat the process. An analogy to control flow is
+      akin to traffic management... The determine the order in which cars are allowed to drive at every moment.
+  </p>
+  <img src="/assets/control flow.png" alt="image" class="mb-6">
+  
+  <p class="mb-6">
+      Generally we use decision-making statements when we have to decide which block of the code will be executed.
+      There are 3 types of decision-making statements.
+  </p>
+  <div class="mb-4">
+      If statement:
+      <img src="/assets/if statements.png" alt="image" class="mb-2">
+      <p class="mb-4">
+          The if statement is the most basic decision-making statement in the JavaScript programming language.
+          There are two possible values of the condition, i.e., true and false.
+          The code block after the if statement will execute only if the value of the condition statement is true.
+          If the value of the condition statement is false, the code block will not be executed.
+      </p>
+  </div>
+  
+  <img src="/assets/if statement 2.png" alt="image" class="mb-6">
+  
+  <div class="mb-4">
+      The if else statement is somewhat similar to the if statement; we are just adding an extra block of code
+      after the if statement. If the value of the condition statement is true, the if block will be executed, else
+      the else block will be executed.
+  </div>
+  <img src="/assets/switch example.png" alt="image" class="mb-6">
+  
+  <p class="mb-6">
+      The switch statement is used to perform different actions based on different conditions.
+      The way it works is as follows: The switch expression is evaluated once.
+      The value of the expression is compared with the values of each case.
+      If there is a match, the associated block of code is executed.
+      If there is no match, the default code block is executed.
+  </p>
+  
+  <h1 class="text-2xl bg-blue-300 font-bold mb-4">LOOPS WHAT ARE THEY?</h1>
+  
+  <p class="mb-6">
+      In programming, a loop is a sequence of instructions that is continually repeated until a certain condition is reached.
+      Typically, a certain process is done, such as getting an item of data and changing it, and then some condition is checked,
+      such as whether a counter has reached a prescribed number.
+  </p>
+  <img src="/assets/for loops.png" alt="image" class="mb-4">
+  <p class="mb-6">
+      In the for loop, we are going to check the value of the condition statement.
+      If the value is true, the block of the code will be executed.
+      After the successful execution of the code block, control goes to the condition statement. Now, if the value is true, again
+      the block of the code will be executed.
+  </p>
+  
+  <p class="mb-6">
+      A real-world example of a loop would be software of the ATM machine.
+      The ATM machine is in a loop to process transactions until you acknowledge that you have no more to do.
+  </p>
+  <h1 class="text-2xl bg-blue-300 font-bold mb-4">The difference between accessing data from arrays and objects</h1>
+  
+  <p class="mb-6">
+      Objects, for starters, are used to represent a "thing" in your code. That could be a person, a car, a building, a book,
+      a character in a game. Basically anything that is made up or can be defined by a set of characteristics. In objects,
+      these characteristics are called properties that consist of a key and a value.
+  </p>
+  <div class="mb-4">
+      There are 3 ways to access data in an object:
+      <img src="/assets/object.property.png" alt="image" class="mb-2">
+      <img src="/assets/[].object.png" alt="image" class="mb-2">
+      <img src="/assets/const{object}.png" alt="image" class="mb-2">
+  </div>
+  <p class="mb-6">
+      An array, on the other hand, is used whenever we want to create and store a list of multiple items in a single variable.
+      Arrays are especially useful when creating ordered collections where items in the collection can be accessed by their numerical position in the list.
+      The way you would access data in an array is by referring to its index number. The index arrays start with [0], meaning the first element has index [0] and the second has [1].
+  </p>
+  
+  <h1 class="text-2xl bg-blue-300 font-bold mb-4">What are functions and why are they helpful?</h1>
+  
+  <p class="mb-6">
+      A Function is simply a "chunk" of code that you can use over and over again, rather than writing it out multiple times.
+  </p>
+  <img src="/assets/function.png" alt="image" class="mb-4">
+  
+  <p class="mb-6">
+      Functions are helpful because they enable programmers to break down or decompose a problem into smaller chunks,
+      each of which performs a particular task. Once a programmer defines a function, they can then call it whenever they need it, simply using its name.
+      However, in order to work, the function will probably require some inputs or parameters, which are given to the function each time it is called.
+  </p>
+  
+     
+
+    </body>
+    <div class="flex justify-center my-4">
+      <a href="../blog/identity-values.html" class="bg-purple-600 text-white py-2 px-4 hover:bg-purple-300">
+          Back
+      </a>
+      <a href="../blog/learning-plan.html" class="bg-purple-600 text-white py-2 px-4 hover:bg-purple-300">
+        Next 
+    </a>
+    </div>
+    <script>const blogMenuButton = document.getElementById('blog-menu-button')
+      const blogMenu = document.getElementById('blog-menu')
+      blogMenuButton.addEventListener('click', () => {
+        blogMenu.classList.toggle('hidden')
+      })
+      </script>
+</html>

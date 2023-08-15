@@ -1,52 +1,87 @@
 <!DOCTYPE html>
-<html>
-  <html>
-  <head>
-    <title>MARGIN, BORDER AND PADDING </title>
-    <meta name="viewport" content="width=device-width, inital-scale=1.0">
-    <link rel="stylesheet" href="/styles/marginstyle.css" type="text/css"> 
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <title>MARGIN, BORDER AND PADDING</title>
+</head>
 
-<h1>What is the difference between Margin, Border, and Padding?</h1>
+<nav class="bg-gray-200 p-4 text-center">
+  <div class="relative inline-block text-left">
+      <button type="button" class="black hover-underline last: focus:outline-none" id="blog-menu-button">
+          Blog
+      </button>
+      <div class="origin-top-right absolute right-0 mt-2 w-32 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden"
+          id="blog-menu" style="z-index: 10;">
+          <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="blog-menu-button">
+             <li> <a href="../blog/about me.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" role="menuitem">About Me</a></li>
+             <li> <a href="../blog/emotional-intelligence.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" role="menuitem">Emotional Intelligence</a></li>   
+             <li>  <a href="../blog/foundations-reflection.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" role="menuitem">Foundations & Reflections</a></li>    
+             <li>  <a href="../blog/html-css.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" role="menuitem:">HTML & CSS</a></li> 
+             <li> <a href="../blog/identity-values.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" role="menuitem:">Identity & Values</a></li>   
+             <li> <a href="../blog/JavaScript-dom.html -dom.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" role="menuitem:">Javascript & DOM</a></li>    
+            <li> <a href="../blog/learning-plan.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" role="menuitem:">Learning Plan</a></li>   
+            <li>  <a href="../blog/neuroplasticity.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" role="menuitem:">Neuroplasticity</a></li>  
+            <li> <a href="../blog/problem-solving.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" role="menuitem:">Problem Solving</a></li>  
+           <li> <a href="../blog/te-houtaewa-template.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" role="menuitem">Te-houtaewa-template</a></li> 
+          </div>
+      </div>
+  </div>
+</nav>
+<body class="bg-gray-100 font-sans">
+    <div class="max-w-3xl mx-auto p-8">
+        <h1 class="text-4xl font-bold text-center bg-blue-500 text-white py-4 rounded-lg mb-8">What is the difference between Margin, Border, and Padding?</h1>
+        
+        <img src="/assets/flower.JPG" alt="image" class="mx-auto mb-8">
 
-<img src="/assets/flower.JPG" alt="image">
+        <h2 class="text-2xl font-bold bg-green-500 text-white py-2 rounded-lg mb-4">Margin</h2>
+        <p class="px-4 mb-8">
+            Controls how much breathing room or whitespace that exists outside of a box.
+            The margin property sets the margins for an element, and is a shorthand property for the following properties:
+            margin-top, margin-right, margin-bottom, and margin-left. In that order.
+        </p>
 
- 
-<h2>Margin.</h2> 
-  <p>Controls how much breathing room or whitespace that exists outside of a box.
-    The margin property sets the margins for an element, and is a shorthand property for the following properties:
-    margin-top,margin-right,margin-bottom and margin-left. In that order.
-  </p>
+        <img src="/assets/margins-borders-padding.png" alt="image" class="mx-auto mb-8">
 
-  <img src="/assets/margins-borders-padding.png" alt="image">
- 
+        <h3 class="text-xl font-bold bg-purple-500 text-white py-2 rounded-lg mb-4">Border</h3>
+        <img src="/assets/Border.png" alt="image" class="mx-auto mb-4">
+        <img src="/assets/example of box model.png" alt="image" class="mx-auto mb-4">
+        <p class="px-4 mb-8">
+            A border is a visual element that surrounds an HTML element and adds a decorative effect to it.
+            It can be used to create emphasis, to separate elements, or to group elements together.
+            In HTML, you can add a border to an element by using the border attribute. This attribute allows you to specify the width, style, and color of the border.
+        </p>
 
-  <body>
-   <h3>Border</h3>
-
-  
-  <img src="/assets/Border.png" alt="image">
-  <img src="/assets/example of box model.png" alt="image">
-  <p class="paragraph"> A border is a visual element that surrounds an HTML element and adds a decorative effect to it. 
-    It can be used to create emphasis, to separate elements, or to group elements together.
-    In HTML, you can add a border to an element by using the border attribute. This attribute allows you to specify the width, style, and color of the border.</p>
-    
-     <h4>Padding</h4>
-
-     <p class="paragraph">In HTML and CSS, padding refers to the space between an element's content and its border.
-       Padding can be used to create space between the element's content and its border, 
-       which can help to separate the content from other elements on the page and improve the overall visual design.
-       <img src="/assets/padding .png" alt="image">
-      In CSS, padding can be set using the padding property, which takes values for the top, right, bottom, and left sides of the element,
-       or using the shorthand padding property, which takes one value to set the padding for all four sides,
-        or up to four values to set the padding for each side individually.</p></body>
-   Quick recap: Padding - Clears an area around the content. 
-   Border - A border that goes around the padding and content
-   Margin - Clears an area outside the border. The margin & padding is transparent
- <a href="https://www.youtube.com/watch?v=RfiQYRn7fBg" target="_blank">Here is an example</a>
- <a href="https://www.w3schools.com/css/css_boxmodel.asp" target="_blank">W3school Example page</a>
-<a href="/index.html" target="_blank">Homepage</a>
-
-
+        <h4 class="text-lg font-bold bg-yellow-500 text-white py-1 rounded-lg mb-4">Padding</h4>
+        <p class="px-4 mb-8">
+            In HTML and CSS, padding refers to the space between an element's content and its border.
+            Padding can be used to create space between the element's content and its border,
+            which can help to separate the content from other elements on the page and improve the overall visual design.
+            <img src="/assets/padding .png" alt="image" class="mx-auto mb-8">
+            In CSS, padding can be set using the padding property, which takes values for the top, right, bottom, and left sides of the element,
+            or using the shorthand padding property, which takes one value to set the padding for all four sides,
+            or up to four values to set the padding for each side individually.
+        </p>
+        
+        <p class="px-4 mb-8 font-bold">
+            Quick recap: Padding - Clears an area around the content.
+            Border - A border that goes around the padding and content.
+            Margin - Clears an area outside the border. The margin & padding is transparent.
+        </p>
+        
+        <div class="text-center">
+            <a href="../blog/foundations-reflection.html" target="_blank" class="bg-blue-500 text-white py-2 px-4  hover:bg-blue-600 transition duration-200">Back</a>
+            <a href="https://www.w3schools.com/css/css_boxmodel.asp" target="_blank" class="bg-green-500 text-white py-2 px-4  hover:bg-green-600 transition duration-200 ml-4">W3Schools Example</a>
+            <a href="../blog/identity-values.html" target="_blank" class="bg-purple-500 text-white py-2 px-4  hover:bg-purple-600 transition duration-200 ml-4">Next page</a>
+        </div>
+    </div>
 </body>
+<script>const blogMenuButton = document.getElementById('blog-menu-button')
+  const blogMenu = document.getElementById('blog-menu')
+  blogMenuButton.addEventListener('click', () => {
+    blogMenu.classList.toggle('hidden')
+  })
+  </script>
 </html>
