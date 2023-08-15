@@ -10,6 +10,8 @@ node server.js
 if the server is in use please run this command :
 npx kill-port 3000 *or whatever port you are running*
 
+Deployed usiing Vercel 
+https://timothy-itayi-github-io.vercel.app/
 
 
 
