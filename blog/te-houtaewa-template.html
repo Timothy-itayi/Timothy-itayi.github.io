@@ -1,28 +1,62 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Stories and Legends (PAGE title) </title>
+    <title>Stories and Legends </title>
     <meta charset="UTF-8">
-    
+    <!-- Add Tailwind CSS CDN link here -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
   </head>
+  <nav class="bg-gray-200 p-4 text-center">
+    <div class="relative inline-block text-left">
+        <button type="button" class="black hover-underline last: focus:outline-none" id="blog-menu-button">
+            Blog
+        </button>
+        <div class="origin-top-right absolute right-0 mt-2 w-32 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden"
+            id="blog-menu" style="z-index: 10;">
+            <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="blog-menu-button">
+               <li> <a href="../blog/about me.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" role="menuitem">About Me</a></li>
+               <li> <a href="../blog/emotional-intelligence.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" role="menuitem">Emotional Intelligence</a></li>   
+               <li>  <a href="../blog/foundations-reflection.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" role="menuitem">Foundations & Reflections</a></li>    
+               <li>  <a href="../blog/html-css.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" role="menuitem:">HTML & CSS</a></li> 
+               <li> <a href="../blog/identity-values.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" role="menuitem:">Identity & Values</a></li>   
+               <li> <a href="../blog/JavaScript-dom.html -dom.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" role="menuitem:">Javascript & DOM</a></li>    
+              <li> <a href="../blog/learning-plan.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" role="menuitem:">Learning Plan</a></li>   
+              <li>  <a href="../blog/neuroplasticity.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" role="menuitem:">Neuroplasticity</a></li>  
+              <li> <a href="../blog/problem-solving.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" role="menuitem:">Problem Solving</a></li>  
+             <li> <a href="../blog/te-houtaewa-template.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" role="menuitem">Te-houtaewa-template</a></li> 
+            </div>
+        </div>
+    </div>
+  </nav>
   
-  <body>
-    <link href="/styles/main.css" rel="stylesheet" type="text/css">
-    <h1>The Story of Te Houtaewa (PAGE heading)</h1>
-    <h2>E kore e mau i a koe, he wae kai pakiaka. <em>A foot accustomed to running over roots makes the speediest runner.</em> (Optional SUB title) </h2>
-    <h3>10 November 2010</h3>
+  <body class="p-6">
+    <h1 class="text-3xl font-bold mb-4">The Story of Te Houtaewa </h1>
+    <h2 class="italic text-lg mb-2">E kore e mau i a koe, he wae kai pakiaka. <em>A foot accustomed to running over roots makes the speediest runner.</em> (Optional SUB title) </h2>
+    <h3 class="mb-2">10 November 2010</h3>
     
-    <p>
+    <p class="mb-4">
       Te Houtaewa was the fastest runner of his day and played many pranks on his peoples enemies. One morning his mother wanted kumara for the hangi (earth oven) and asked Te Houtaewa to go to the gardens at Te Kao, a short distance away. He agreed to fetch the kumara and told his mother to prepare the hangi.
     </p>
-    <p>
+    <p class="mb-4">
       Instead of going to the nearby gardens, Te Houtaewa set off for Ahipara as he wanted to annoy some Te Rarawa people who lived there. Carrying two large baskets for the kumara, he ran like the wind, completing the journey over the hard sands of Te Oneroa a Tohe (Ninety Mile Beach) in the few hours it takes a good hangi to heat up properly. On reaching Ahipara, he went straight to the people's kumara pataka (storehouse for the sweet potatoes) situated at the foot of the hill Whangatauatia.
     </p>
-    <p>
+    <p class="mb-4">
       While Te Houtaewa was filling his baskets with kumara he was spotted stealing the kai (food). He was immediately recognised.
     </p>
     
     <!-- this is a comment. -->
   
   </body>
+  <script>const blogMenuButton = document.getElementById('blog-menu-button')
+    const blogMenu = document.getElementById('blog-menu')
+    blogMenuButton.addEventListener('click', () => {
+      blogMenu.classList.toggle('hidden')
+    })
+    </script>
+
+<div class="flex justify-center my-4">
+  <a href="../styles/index.html" class="bg-purple-600 text-white py-2 px-4  hover:bg-purple-300">
+      Back to Home Page
+  </a>
+</div>
 </html>
